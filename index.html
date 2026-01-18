@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Auto Alert Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>📦 Inventory Auto Alert Manager</h1>
+
+    <div class="form-box">
+        <input type="text" id="productName" placeholder="Product Name">
+        <input type="number" id="quantity" placeholder="Quantity">
+        <input type="number" id="minQuantity" placeholder="Minimum Quantity">
+        <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Min Qty</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="inventoryTable">
+            <!-- Products will appear here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
